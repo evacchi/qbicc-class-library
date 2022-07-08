@@ -48,4 +48,9 @@ final class Unsafe$_patch {
         }
         return UnsafeConstants.PAGE_SIZE;
     }
+
+    @Replace
+    private void checkNativeAddress(long address) {
+        // YOLO
+    }
 }
